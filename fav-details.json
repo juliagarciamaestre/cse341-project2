@@ -1,0 +1,35 @@
+{
+    "user1":{
+        "favoriteMovie": "Como si fuera la primera vez",
+        "releasedDate": "02/13/2004",
+        "plot": "It follows the story of Henry, a womanizing marine veterinarian who falls for an art teacher named Lucy. When he discovers she has amnesia, and forgets him when she falls asleep, he resolves to win her over again each new day.",
+        "imdb": "6.8/10",
+        "budget": "$75 million",
+        "boxOffice": "$198.5 million",
+        "director": "Peter Segal",
+        "whereToWatch": "Apple Tv"
+    },
+
+    "user2":{
+        "favoriteMovie": "Titanic",
+        "releasedDate": "03/31/1909",
+        "plot": "In 1996, aboard the research vessel Akademik Mstislav Keldysh, Brock Lovett and his team search the wreck of RMS Titanic. They recover a safe they hope contains a necklace with a large diamond known as the Heart of the Ocean. Instead, they only find a drawing of a young nude woman wearing the necklace. The sketch is dated April 14, 1912, the same day the Titanic struck the iceberg that caused it to sink.[Note 2] Rose Dawson Calvert, the woman in the drawing, is brought aboard Keldysh, and recounts her experiences.",
+        "imdb": "7.9/10",
+        "budget": "$200 million",
+        "boxOffice": "$2.249 billion",
+        "director": "James Cameron",
+        "whereToWatch": "Disney+"
+
+    },
+
+    "user3":{
+        "favoriteMovie": "La La Land",
+        "releasedDate": "12/09/2016",
+        "plot": "While stuck in Los Angeles traffic, aspiring actress Amelia 'Mia' Dolan has a moment of road rage directed at Sebastian 'Seb' Wilder, a jazz pianist. After a hard day at work, Mia's subsequent audition goes awry when the casting director takes a phone call during an emotional scene. That night, her roommates take her to a lavish party in the Hollywood Hills, promising her that someone in the crowd could jump-start her career. After her car is towed, she walks home in disappointment.",
+        "imdb": "8/10",
+        "budget": "$30 million",
+        "boxOffice": "$447.4 million",
+        "director": "Damian Chazelle",
+        "whereToWatch": "HBO Max, Amazon Prime, Apple Tv"
+    }
+}

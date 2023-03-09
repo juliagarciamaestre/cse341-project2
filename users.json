@@ -1,0 +1,25 @@
+{
+    "user1":{
+        "firstName": "Julia",
+        "lastName": "Garcia",
+        "email": "juliagarciamaestre@gmail.com",
+        "favoriteMovie": "Como si fuera la primera vez",
+        "birthday": "04/26/97"
+    },
+
+    "user2":{
+        "firstName": "Melanie",
+        "lastName": "Schwirckslis",
+        "email": "melaschw@gmail.com",
+        "favoriteMovie": "Titanic",
+        "birthday": "02/22/97"
+    },
+
+    "user3":{
+        "firstName": "Ginny",
+        "lastName": "Kim",
+        "email": "ginnydidoca@gmail.com",
+        "favoriteMovie": "La La Land",
+        "birthday": "02/22/96"
+    }
+}
