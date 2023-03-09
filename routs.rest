@@ -1,0 +1,24 @@
+GET http://localhost:3000/favorite/user
+
+### get one user
+GET http://localhost:3000/favorite/user/64090881157edabb9f0e27a5
+
+### get all the details data in the db
+GET http://localhost:3000/favorite/details
+
+### get details data for one id 
+GET http://localhost:3000/favorite/details/6409369d157edabb9f0e27c1
+
+### not working
+GET http://localhost:3000/favorite/64090881157edabb9f0e27a5
+### not working
+POST http://localhost:3000/favorite HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Catalina",
+    "lastName": "Garcia",
+    "email": "catigm@gmail.com",
+    "favoriteMovie": "red",
+    "birthday": "03/26/94"
+}
