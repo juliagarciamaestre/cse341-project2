@@ -17,7 +17,7 @@ const getAllData = async (req, res, next) => {
     });
 };
 
-const getSingleData = async (req, res, next) => {
+const getSingleUser = async (req, res, next) => {
     const userId = new ObjectId(req.params.id);
     const result = await mongodb
       .getDb()
@@ -31,15 +31,14 @@ const getSingleData = async (req, res, next) => {
     });
 };
 
-const getSingleUser = async (req, res, next) => {
+const getSingleData = async (req, res, next) => {
     const userId = new ObjectId(req.params.id);
     const result = await mongodb
       .getDb()
       .db('favorite')
       .collection('favDetails')
       .find({ _id: userId });
-    result.toArray().then((lists) => {
-      res.setHeader('Content-Type', 'application/json');
+      result.toArray().then((lists) => {
       res.status(200).json(lists[0]);
       console.log(result);
     });

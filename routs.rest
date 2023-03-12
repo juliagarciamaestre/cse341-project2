@@ -10,8 +10,6 @@ GET http://localhost:3000/favorite/details
 GET http://localhost:3000/favorite/details/6409369d157edabb9f0e27c1
 
 ### not working
-GET http://localhost:3000/favorite/64090881157edabb9f0e27a5
-### not working
 POST http://localhost:3000/favorite HTTP/1.1
 content-type: application/json
 
@@ -22,3 +20,6 @@ content-type: application/json
     "favoriteMovie": "red",
     "birthday": "03/26/94"
 }
+
+###
+GET  https://my-favorites.onrender.com/favorite/user
