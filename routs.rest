@@ -68,4 +68,6 @@ Content-Type: application/json
 }
 
 ### not working if trying to erase user, but working if trying to delete favorite details
-DELETE http://localhost:3000/favorite/641505b487960125d6693de5 HTTP/1.1
+DELETE http://localhost:3000/favorite/641505b487960125d669 HTTP/1.1
+
+
