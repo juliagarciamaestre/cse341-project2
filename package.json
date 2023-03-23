@@ -17,6 +17,7 @@
     "express-validator": "^6.15.0",
     "http-errors": "^2.0.0",
     "mongodb": "^5.1.0",
+    "mongoose": "^7.0.3",
     "request": "^2.88.2",
     "response": "^0.18.0",
     "swagger-ui-express": "^4.6.2",

@@ -1,26 +1,39 @@
 const { validationResult } = require('express-validator');
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
+const createError = require('http-errors');
+const mongoose = require('mongoose');
 
-
+//Read all the collection user
 const getAllUser = async (req, res, next) => {
+  try{
     const result = await mongodb.getDb().db('favorite').collection('user').find();
     result.toArray().then((lists) => {
       res.setHeader('Content-Type', 'application/json');
       res.status(200).json(lists);
     });
+  } catch (error) {
+    console.log(error.message);
+  } 
 };
 
+//Read all the collection of favDetails
 const getAllData = async (req, res, next) => {
-
+  try {
     const result = await mongodb.getDb().db('favorite').collection('favDetails').find();
     result.toArray().then((lists) => {
       res.setHeader('Content-Type', 'application/json');
       res.status(200).json(lists);
     });
+  } catch (error) {
+    console.log(error.message);
+  }
+   
 };
 
+//Read the user by id
 const getSingleUser = async (req, res, next) => {
+  try{
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
@@ -36,9 +49,18 @@ const getSingleUser = async (req, res, next) => {
       res.status(200).json(lists[0]);
       console.log(result);
     });
+  } catch (error) {
+    console.log(error.message);
+    if (error instanceof mongoose.CastError){
+      next(createError(400, 'Invalid ID value'));
+      return;
+    }
+    next (error);
+  }
 };
 
 const getSingleData = async (req, res, next) => {
+  try{
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
@@ -53,6 +75,15 @@ const getSingleData = async (req, res, next) => {
       res.status(200).json(lists[0]);
       console.log(result);
     });
+  } catch (error) {
+    console.log(error.message);
+    if (error instanceof mongoose.CastError){
+      next(createError(400, 'Invalid Details Data ID'));
+      return;
+    }
+    next (error);
+  }
+    
 };
 
 const createData = async (req, res) => {
